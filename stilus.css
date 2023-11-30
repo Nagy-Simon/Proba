@@ -1,0 +1,123 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+:root {
+    --zold: rgb(33, 211, 89);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url('https://images.unsplash.com/photo-1606482512676-255bf02be7cf?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+    background-image: url('https://voa-production.s3.amazonaws.com/dragonfly-uploads/2020/11/20/14/31/18/924b9503-de11-46da-86ab-9075c1dc1e1b/Advent.png');
+    background-size: 100% 100%;
+    background-position: top;
+    background-attachment: fixed;
+    /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.sor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.wrapper {
+    height: 210px;
+    width: 170px;
+    border: 5px solid var(--zold);
+    position: relative;
+    /* 3D */
+    perspective: 1000px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.door {
+    background-color: var(--zold);
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    /* inner layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left-door {
+    top: 0;
+    left: 0;
+    border-right: 1px solid black;
+    /* transition */
+    transform-origin: left;
+    transition: transform 1s;
+}
+
+#right-door {
+    top: 0;
+    right: 0;
+    border-left: 1px solid black;
+    /* transition */
+    transform-origin: right;
+    transition: transform 1s;
+}
+
+.shape {
+    background-size: 100% 100%;
+    border: 1px solid black;
+    width: 65px;
+    height: 85px;
+}
+
+.knob {
+    width: 5px;
+    height: 20px;
+    background-color: #033821;
+    position: absolute;
+}
+
+#left-knob {
+    top: 50%;
+    right: 10px;
+}
+
+#right-knob {
+    top: 50%;
+    left: 10px;
+}
+
+/* Door swing effect */
+/* .wrapper:hover #left-door {
+    transform: rotateY(-140deg);
+}
+
+.wrapper:hover #right-door {
+    transform: rotateY(140deg);
+} */
+
+#rejtett {
+    position: absolute;
+    display: none;
+    /* background-color: #fff; */
+    width: 700px;
+    height: 700px;
+    background-size: 100% 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
