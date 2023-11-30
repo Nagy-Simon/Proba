@@ -7,14 +7,15 @@
 }
 
 :root {
-    --zold: rgb(33, 211, 89);
+    /* --zold: rgb(33, 211, 89); */
+    --zold: #622569;
 }
 
 body {
     height: 100vh;
     width: 100%;
     /* background-image: url('https://images.unsplash.com/photo-1606482512676-255bf02be7cf?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
-    background-image: url('https://voa-production.s3.amazonaws.com/dragonfly-uploads/2020/11/20/14/31/18/924b9503-de11-46da-86ab-9075c1dc1e1b/Advent.png');
+    background-image: url('https://i.giphy.com/media/3ohs7T1ljes6v7EdFe/giphy.webp'), url('https://media.tenor.com/3HEP4vun47UAAAAC/christmas-lights.gif');
     background-size: 100% 100%;
     background-position: top;
     background-attachment: fixed;
@@ -48,6 +49,7 @@ img {
 }
 
 .door {
+    background-image: url('https://i.giphy.com/media/3ohs7T1ljes6v7EdFe/giphy.webp');
     background-color: var(--zold);
     height: 100%;
     width: 50%;
